@@ -1,0 +1,13 @@
+import qrcode
+
+# Nuevo enlace del video en YouTube
+youtube_url = "https://youtu.be/HEyKEgGYhO4?si=u8UJVe3gUM2NIVLJ"
+
+# Generar nuevo código QR
+qr_youtube = qrcode.make(youtube_url)
+
+# Guardar la imagen del código QR
+qr_youtube_path = "/mnt/data/qr_youtube_ancon.png"
+qr_youtube.save(qr_youtube_path)
+
+qr_youtube_path
